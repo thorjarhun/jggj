@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', require('./routes/index'));
 app.use('/GAS', require('./routes/GAS'));
+app.use('/tran', require('./routes/tran'));
 app.use('/proxy', require('./routes/proxy'));
 
 // catch 404 and forward to error handler
