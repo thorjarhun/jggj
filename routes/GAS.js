@@ -4,6 +4,7 @@ var trans = require('../lib/trans');
 var http = require('http');
 var express = require('express');
 var router = express.Router();
+var _ = require('lodash');
 /*
 function serialize(obj, prefix) {
   var str = [];
@@ -34,7 +35,7 @@ router.get('/', function(req, res, next) {
     port: 9080,
     path: '/PCW/rest/api/proxy',
     method: 'POST',
-    headers: req.headers
+    headers: _.extend(req.headers, { 'Content-Type' : 'application/json; charset=utf-8' })
   };
 
   delete options.headers['content-length'];
@@ -52,17 +53,17 @@ router.get('/', function(req, res, next) {
       proxy_res.headers['Access-Control-Allow-Origin'] = '*';
       proxy_res.headers['Access-Control-Allow-Headers'] = 'Content-Type';//req.headers['Access-Control-Request-Headers'];
       //res.writeHead(proxy_res.statusCode, proxy_res.headers);
-      console.log('before buildJSON: ' + body);
+      console.log('before buildJSON: ', body);
       var temp = trans.buildJSON('GAS', body);
-      console.log('after buildJSON: ');
-      console.log(temp);
+      console.log('after buildJSON: ', temp);
       res.send(temp);
     });
   });
-
+  /*
   if (req.query && req.query.in) {
     req.query = serialize(req.query).slice(1);
   }
+  */
 
   //console.log(serialize(req.query));
   //proxy_req.end(serialize(req.query));
