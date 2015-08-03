@@ -9,7 +9,7 @@ router.all('/', function(req, res) {
   if (req.method === "POST") {
     req.query = req.body;
   }
-  console.log('From request: ' + req.query);
+  console.log('From request: ', req.query);
 
   var options = {
     hostname: 'localhost',
@@ -30,14 +30,13 @@ router.all('/', function(req, res) {
     proxy_res.on("end", function() {
       console.log('finished receiving response: ');
       console.log('From SCEPTRE: ' + body);
-      var temp = trans.buildJSON('GAS', body);
+      var temp = trans.buildJSON(req.query.tran, body);
       res.send(temp);
     });
   });
 
-  if (req.query && !req.query.tran) {
-    req.query.tran = "GAS";
-  }
+  req.query.tran = "GAS";
+
   var query = trans.parseJSON(req.query);
   console.log('To SCEPTRE: ' + query);
   proxy_req.end(query);

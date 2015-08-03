@@ -9,7 +9,7 @@ router.all('/', function(req, res) {
   if (req.method === "POST") {
     req.query = req.body;
   }
-  console.log('From request: ' + req.query);
+  console.log('From request: ', req.query);
 
   var options = {
     hostname: 'localhost',
