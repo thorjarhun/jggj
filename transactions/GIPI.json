@@ -219,5 +219,6 @@
       "size": 1
     }
   ],
-  "size": 1
+  "size": 1,
+  "returns input?": true
 }

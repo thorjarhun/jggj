@@ -17,18 +17,26 @@ process.stdin
 process.stdout.on('error', process.exit);
 */
 
-var argv = require('minimist')(process.argv.slice(2));
-
-if (!process.argv[2]) {
-  console.log("Input file name required.");
-  process.exit();
+var argv = require('minimist')(process.argv.slice(2), {
+  string: ['i', 'o', 'r'],
+  alias: {
+    i: ['in', 'input', 'file'],
+    o: ['out', 'output'],
+    r: ['ri', 'returnsInput']
+  }
+});
+if (!('i' in argv)) {
+  if (!argv._.length) {
+    console.log("Input file name required.");
+    process.exit();
+  }
+  argv.i = argv._[0];
 }
-
 
 var _ = require('lodash');
 
 var fs = require('fs');
-var obj = fs.readFileSync(process.argv[2]).toString().split('\n').map(function(line) {
+var obj = fs.readFileSync(argv.i.trim()).toString().split('\n').map(function(line) {
   if (line[0] === "0") {
     //return line.match(/\d{6}(.*)\d{8}/)[1].trim();
     return line.match(/\d{6}([^\.]*).*\d{8}/)[1].trim();
@@ -136,11 +144,16 @@ obj = obj.slice(1).reduce(function(root, field) {
 }, obj[0]);
 
 
+if ('r' in argv) {
+  obj["returns input?"] = true;
+}
+
 console.log(JSON.stringify(obj, null, 2));
 verify(obj);
 
-if (process.argv[3]) {
-  fs.writeFile(process.argv[3], JSON.stringify(obj, null, 2), function (err) {
+//if (process.argv[3]) {
+if ('o' in argv) {
+  fs.writeFile(argv.o.trim(), JSON.stringify(obj, null, 2), function (err) {
     if(err) {
       return console.log(err);
     }

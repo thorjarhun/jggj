@@ -1,7 +1,6 @@
 {
   "level": "01",
   "name": "MII101IO",
-  "returns input?": true,
   "children": [
     {
       "level": "03",
@@ -679,5 +678,6 @@
       "size": 1
     }
   ],
-  "size": 1
+  "size": 1,
+  "returns input?": true
 }
