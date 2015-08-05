@@ -1,4 +1,4 @@
-var trans = require('../lib/trans');
+var trans = require('../lib/sceptre');
 var http = require('http');
 var _ = require('lodash');
 var express = require('express');
@@ -30,12 +30,12 @@ router.all('/', function(req, res) {
     proxy_res.on("end", function() {
       console.log('finished receiving response: ');
       console.log('From SCEPTRE: ' + body);
-      var temp = trans.buildJSON(req.query.tran, body);
+      var temp = trans.buildJSON(req.query['transaction-code'], body);
       res.send(temp);
     });
   });
 
-  req.query.tran = "GAS";
+  req.query['transaction-code'] = "GAS";
 
   var query = trans.parseJSON(req.query);
   console.log('To SCEPTRE: ' + query);

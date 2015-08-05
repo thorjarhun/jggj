@@ -1,4 +1,4 @@
-var trans = require('../lib/trans');
+var trans = require('../lib/sceptre');
 var http = require('http');
 var _ = require('lodash');
 var express = require('express');

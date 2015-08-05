@@ -1,0 +1,53 @@
+000100 01  MII104IO.                                                    00000100
+000200   03  LINE-LENGTH-01            PIC 9(4)                COMP.    00000200
+000300   03  ZZ01                      PIC X(2).                        00000300
+000400   03  TRANSACTION-CODE          PIC X(8).                        00000400
+000500   03  MESSAGE-IND               PIC X.                           00000500
+000600        88 FIRST-TIME-IN                     VALUE IS '0'.        00000600
+000800   03  INPUT-DATA-FIELDS.                                         00000800
+001000     05  SER-STATUS              PIC X(01).                       00001000
+001100     05  CREATE-PART.                                             00001100
+001200       07  NCA-PART-NUMBER       PIC X(14).                       00001200
+001300     05  PART-ON-PERFECT.                                         00001300
+001400       07  NCA-PART-NUMBER       PIC X(14).                       00001400
+001500     05  OWNERSHIP-CDE           PIC X(05).                       00001500
+001600     05  NHA-PART-NUMBER         PIC X(14).                       00001600
+001700     05  FIRST-LEVEL.                                             00001700
+001800       07  POSITION-CODE         PIC X(03).                       00001800
+001900     05  SOURCE-OF-SERIAL-NUMBER PIC X(03).                       00001900
+002000        88 VALID-SERIAL-NUMBER-SOURCE        VALUE IS 'A/C'       00002000
+002100                                                      'NHA'.      00002100
+002200        88 SERIAL-NUMBER-FROM-AC             VALUE IS 'A/C'.      00002200
+002300        88 SERIAL-NUMBER-FROM-NHA            VALUE IS 'NHA'.      00002300
+002400     05  TOT-AC-TIME-REQ-IND     PIC X.                           00002400
+002500     05  INSTALL-DATE            PIC X(10).                       00002500
+002900     05  NHA-POSITION.                                            00002900
+003000       07  POSITION-CODE         PIC X(03).                       00003000
+003100     05  ATTACH-AA-IND           PIC X.                           00003100
+003200        88 VALID-AA-IND-ENTRIES              VALUE IS ' '         00003200
+003300                                                      'Y'         00003300
+003400                                                      'N'.        00003400
+003500        88 ATTACH-AA                         VALUE IS ' '         00003500
+003600                                                      'Y'.        00003600
+003700        88 DO-NOT-ATTACH-AA                  VALUE IS 'N'.        00003700
+003800     05  RANGE-OF-AIRCRAFT-LOW   PIC X(05).                       00003800
+003900     05  RANGE-OF-AIRCRAFT-HI    PIC X(05).                       00003900
+004000     05  FLEET-TYPE              PIC X(02).                       00004000
+004300     05  COMMENT-INFO            PIC X(64).                       00004300
+004400     05  ADDCOMM-INFO            PIC X(64).                       00004400
+005010     05  EMPLOYEE-NUM            PIC X(10).                       00005010
+004100     05  NHA-SERIAL-NUMBER-TABLE             OCCURS 0018.         00004100
+004200       07  NHA-SERIAL-NUMBER     PIC X(05).                       00004200
+004500     05  NHA-TIMED               PIC X(01).                       00004500
+004600     05  TIME-STANDARD-TABLE                 OCCURS 0002.         00004600
+004700       07  TIME-STANDARD         PIC X.                           00004700
+004800       07  TSO-AT-INSTALL        PIC X(05).                       00004800
+004900       07  TSO-AT-INSTALL-DECIMAL                                 00004900
+005000                                 PIC X(02).                       00005000
+005020   03  OUTUT-DATA-FIELDS.                                         00005020
+005030     05  NCA-SERIAL-NUM          PIC X(05).                       00005030
+005100   03  EXTERNAL-MESSAGE-TABLE.                                    00005100
+005200     05  EXTERNAL-MESSAGE                    OCCURS 0002.         00005200
+005300       07  MESSAGE-IDENTIFICATION                                 00005300
+005400                                 PIC X(08).                       00005400
+005500       07  MESSAGE-TEXT          PIC X(54).                       00005500
