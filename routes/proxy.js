@@ -1,15 +1,22 @@
-var trans = require('../lib/sceptre');
-var http = require('http');
+var router = require('express').Router();
 var _ = require('lodash');
-var express = require('express');
-var router = express.Router();
+var http = require('http');
 
 /* GET data */
 router.all('/', function(req, res) {
   if (req.method === "POST") {
     req.query = req.body;
   }
+
   console.log('From request: ', req.query);
+
+  var keys = Object.keys(req.query),
+    query = req.query[keys[0]] || keys[0];
+
+  if (keys.length !== 1 || !query) {
+    res.send(400, "Error: Expected one request parameter");
+    return;
+  }
 
   var options = {
     hostname: 'localhost',
@@ -18,14 +25,6 @@ router.all('/', function(req, res) {
     method: 'POST',
     headers: _.extend(_.omit(req.headers, 'content-length'), { 'Content-Type' : 'application/json; charset=utf-8' })
   };
-
-  var keys = Object.keys(req.query),
-      query = req.query[keys[0]] || keys[0];
-
-  if (keys.length !== 1 || !query) {
-    res.send(400, "Error: Expected one request parameter");
-    return;
-  }
 
   var proxy_req = http.request(options, function (proxy_res) {
     console.log('started receiving response: ');

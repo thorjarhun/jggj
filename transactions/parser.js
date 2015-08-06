@@ -151,13 +151,11 @@ if ('r' in argv) {
 console.log(JSON.stringify(obj, null, 2));
 verify(obj);
 
-//if (process.argv[3]) {
 if ('o' in argv) {
   fs.writeFile(argv.o.trim(), JSON.stringify(obj, null, 2), function (err) {
     if(err) {
       return console.log(err);
     }
-
     console.log("The file was saved!");
   })
 }

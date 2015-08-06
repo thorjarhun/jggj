@@ -1,9 +1,7 @@
-var trans = require('../lib/sceptre');
-var http = require('http');
+var router = require('express').Router();
 var _ = require('lodash');
+var sceptre = require('../lib/sceptre');
 var request = require('request');
-var express = require('express');
-var router = express.Router();
 
 /* Process a generic transaction object */
 router.all('/', function(req, res) {
@@ -12,7 +10,7 @@ router.all('/', function(req, res) {
   }
   console.log('From request: ', req.query);
 
-  var query = trans.parseJSON(req.query);
+  var query = sceptre.parseJSON(req.query);
   console.log('To SCEPTRE: ' + query);
 
   var options = {
@@ -24,7 +22,7 @@ router.all('/', function(req, res) {
   request(options, function (err, proxy_res, body) {
     if (err) throw new Error(err);
     console.log('From SCEPTRE: ' + body);
-    var temp = trans.buildJSON(req.query['transaction-code'], body);
+    var temp = sceptre.buildJSON(req.query['transaction-code'], body);
     res.send(temp);
   });
 

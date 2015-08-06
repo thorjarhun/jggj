@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -19,10 +20,20 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(function(req, res, next) {
+  //var props = _.pick(req, ['method', 'url', 'path', 'params', 'query', 'body']);
+  console.log("INPUT:\t%s %s", req.method, req.url);
+  console.log("\tparams: ", req.params);
+  console.log("\tquery: ", req.query);
+  console.log("\tbody: ", req.body);
+  next();
+});
+
 app.use('/', require('./routes/index'));
 app.use('/GAS', require('./routes/GAS'));
 app.use('/tran', require('./routes/tran'));
 app.use('/proxy', require('./routes/proxy'));
+app.use('/inputs', require('./routes/query-format'));
 
 // catch 404 and forward to error handler
 

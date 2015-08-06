@@ -1,8 +1,7 @@
-var trans = require('../lib/sceptre');
-var http = require('http');
+var router = require('express').Router();
 var _ = require('lodash');
-var express = require('express');
-var router = express.Router();
+var sceptre = require('../lib/sceptre');
+var http = require('http');
 
 /* GET GAS data */
 router.all('/', function(req, res) {
@@ -30,14 +29,14 @@ router.all('/', function(req, res) {
     proxy_res.on("end", function() {
       console.log('finished receiving response: ');
       console.log('From SCEPTRE: ' + body);
-      var temp = trans.buildJSON(req.query['transaction-code'], body);
+      var temp = sceptre.buildJSON(req.query['transaction-code'], body);
       res.send(temp);
     });
   });
 
   req.query['transaction-code'] = "GAS";
 
-  var query = trans.parseJSON(req.query);
+  var query = sceptre.parseJSON(req.query);
   console.log('To SCEPTRE: ' + query);
   proxy_req.end(query);
 
