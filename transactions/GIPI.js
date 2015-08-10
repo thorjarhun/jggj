@@ -1,0 +1,224 @@
+module.exports = {
+  "level": "01",
+  "name": "MII103IO",
+  "children": [
+    {
+      "level": "03",
+      "name": "TRANSACTION-CODE",
+      "type": "X",
+      "size": 8
+    },
+    {
+      "level": "03",
+      "name": "INPUT-DATA",
+      "children": [
+        {
+          "level": "05",
+          "name": "FUNCTION-CDE",
+          "type": "X",
+          "size": 1
+        },
+        {
+          "level": "05",
+          "name": "INSP-NWA-STK-NUM",
+          "type": "X",
+          "size": 14
+        }
+      ],
+      "size": 1
+    },
+    {
+      "level": "03",
+      "name": "EXTERNAL-MESSAGE-TABLE",
+      "children": [
+        {
+          "level": "05",
+          "name": "EXTERNAL-MESSAGE",
+          "size": 2,
+          "children": [
+            {
+              "level": "07",
+              "name": "MESSAGE-IDENTIFICATION",
+              "type": "X",
+              "size": 8
+            },
+            {
+              "level": "07",
+              "name": "MESSAGE-TEXT",
+              "type": "X",
+              "size": 54
+            }
+          ]
+        }
+      ],
+      "size": 1
+    },
+    {
+      "level": "03",
+      "name": "OUTPUT-DATA",
+      "children": [
+        {
+          "level": "05",
+          "name": "NWA-STOCK-NUM",
+          "type": "X",
+          "size": 14
+        },
+        {
+          "level": "05",
+          "name": "CONTROL-PROGRAM",
+          "type": "9",
+          "size": 3
+        },
+        {
+          "level": "05",
+          "name": "FILLER",
+          "type": "X",
+          "size": 1
+        },
+        {
+          "level": "05",
+          "name": "CONTROL-PROGRAM-DESC",
+          "type": "X",
+          "size": 15
+        },
+        {
+          "level": "05",
+          "name": "RECORDS-REQUIRED-IND",
+          "type": "X",
+          "size": 1
+        },
+        {
+          "level": "05",
+          "name": "MFG-PART-NUMBER",
+          "type": "X",
+          "size": 20
+        },
+        {
+          "level": "05",
+          "name": "AA-STATUS-LABEL",
+          "type": "X",
+          "size": 8
+        },
+        {
+          "level": "05",
+          "name": "AA-STATUS",
+          "type": "X",
+          "size": 11
+        },
+        {
+          "level": "05",
+          "name": "AA-WORK-SECTION-LABEL",
+          "type": "X",
+          "size": 19
+        },
+        {
+          "level": "05",
+          "name": "AA-WORK-SECTION-NUMBER",
+          "type": "9",
+          "size": 2
+        },
+        {
+          "level": "05",
+          "name": "FILLER",
+          "type": "X",
+          "size": 1
+        },
+        {
+          "level": "05",
+          "name": "AA-WORK-SECTION-TITLE",
+          "type": "X",
+          "size": 64
+        },
+        {
+          "level": "05",
+          "name": "AA-DESCRIPTION-LABEL",
+          "type": "X",
+          "size": 16
+        },
+        {
+          "level": "05",
+          "name": "AA-DESCRIPTION",
+          "type": "X",
+          "size": 50
+        },
+        {
+          "level": "05",
+          "name": "ALTERNATE-DETAILS",
+          "size": 25,
+          "children": [
+            {
+              "level": "07",
+              "name": "START-TAG",
+              "type": "X",
+              "size": 5
+            },
+            {
+              "level": "07",
+              "name": "NWA-STK-NUM",
+              "type": "X",
+              "size": 14
+            },
+            {
+              "level": "07",
+              "name": "INSPECTION-TYPE",
+              "type": "X",
+              "size": 3
+            },
+            {
+              "level": "07",
+              "name": "SUPPRESS-FORECAST",
+              "type": "X",
+              "size": 10
+            },
+            {
+              "level": "07",
+              "name": "KEYWORD-DESCRIPTION",
+              "type": "X",
+              "size": 50
+            },
+            {
+              "level": "07",
+              "name": "REFERENCE-INFO",
+              "type": "X",
+              "size": 50
+            },
+            {
+              "level": "07",
+              "name": "TIME-DETAILS",
+              "size": 4,
+              "children": [
+                {
+                  "level": "09",
+                  "name": "TIME-STANDARD",
+                  "type": "X",
+                  "size": 1
+                },
+                {
+                  "level": "09",
+                  "name": "ALLOWABLE-TIME-TO-OVERHAUL",
+                  "type": "X",
+                  "size": 10
+                },
+                {
+                  "level": "09",
+                  "name": "ALLOWABLE-LIFE",
+                  "type": "X",
+                  "size": 10
+                }
+              ]
+            },
+            {
+              "level": "07",
+              "name": "END-TAG",
+              "type": "X",
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "size": 1
+    }
+  ],
+  "size": 1,
+  "returns input?": true
+}

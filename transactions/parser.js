@@ -25,6 +25,8 @@ var argv = require('minimist')(process.argv.slice(2), {
     r: ['ri', 'returnsInput']
   }
 });
+//console.log(argv);
+//process.exit();
 if (!('i' in argv)) {
   if (!argv._.length) {
     console.log("Input file name required.");
@@ -152,7 +154,11 @@ console.log(JSON.stringify(obj, null, 2));
 verify(obj);
 
 if ('o' in argv) {
-  fs.writeFile(argv.o.trim(), JSON.stringify(obj, null, 2), function (err) {
+  var content = JSON.stringify(obj, null, 2);
+  if (argv.o.trim().slice(-3) === '.js') {
+    content = 'module.exports = ' + content;
+  }
+  fs.writeFile(argv.o.trim(), content, function (err) {
     if(err) {
       return console.log(err);
     }
