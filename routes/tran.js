@@ -22,7 +22,7 @@ router.all('/', function(req, res) {
   request(options, function (err, proxy_res, body) {
     if (err) throw new Error(err);
     console.log('From SCEPTRE: ' + body);
-    var temp = sceptre.buildJSON(req.query['transaction-code'], body);
+    var temp = sceptre.buildJSON(req.query['transaction-code'] || req.query['TRANSACTION-CODE'], body);
     res.send(temp);
   });
 
