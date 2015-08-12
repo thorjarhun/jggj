@@ -23,7 +23,16 @@ router.all('/', function(req, res) {
     if (err) throw new Error(err);
     console.log('From SCEPTRE: ' + body);
     var temp = sceptre.buildJSON(req.query['transaction-code'] || req.query['TRANSACTION-CODE'], body);
+
     res.send(temp);
+
+    /*
+    var fs = require('fs');
+    fs.createWriteStream('input.txt').end(query);
+    fs.createWriteStream('output.txt').end(body);
+    fs.createWriteStream('input.json').end(JSON.stringify(req.query, null, 2));
+    fs.createWriteStream('output.json').end(JSON.stringify(temp, null, 2));
+    */
   });
 
 });

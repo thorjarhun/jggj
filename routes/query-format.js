@@ -12,7 +12,6 @@ router.all('/', function(req,res) {
 
 router.all('/:tran', function(req, res) {
   var tran = req.params.tran;
-  //console.log(tran);
 
   console.log('From request: ', tran);
 
