@@ -1,9 +1,9 @@
 {
-  "name": "jgggj",
+  "name": "jggj",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "set DEBUG=jggj:* & node ./bin/www",
     "stay": "nodemon ./bin/www",
     "debug": "node-debug ./bin/www"
   },

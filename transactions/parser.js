@@ -163,7 +163,7 @@ if ('o' in argv) {
       return console.log(err);
     }
     console.log("The file was saved!");
-  })
+  });
 }
 
 /*
@@ -184,11 +184,11 @@ function verify(obj) {
     throw new Error(obj.name + " - name contains whitespace");
   } else if (!obj.size) {
     throw new Error(obj.name + " - missing size");
-  } else if (!parseInt(obj.size)) {
+  } else if (!parseInt(obj.size, 10)) {
     throw new Error(obj.name + " - improper size");
   } else if (!obj.level) {
     throw new Error(obj.name + " - missing level");
-  } else if (!parseInt(obj.level)) {
+  } else if (!parseInt(obj.level, 10)) {
     throw new Error(obj.name + " - improper level");
   } else if (obj.children) {
     obj.children.forEach(function (child) {
