@@ -172,15 +172,15 @@
         "TIME-STANDARD-DESC": "CYCLES                  ",
         "TSO": {
           "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "005284.00"
+          "VALUE-OF-TIME": "005309.00"
         },
         "TOTAL-TIME": {
           "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "042141.00"
+          "VALUE-OF-TIME": "042166.00"
         },
         "TIME-SINCE-REPAIR": {
           "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "003499.00"
+          "VALUE-OF-TIME": "003524.00"
         },
         "TIME-SINCE-OHAUL-AT-INST": {
           "SIGN-OF-THE-TIME": " ",
@@ -199,15 +199,15 @@
         "TIME-STANDARD-DESC": "FLYING TIME             ",
         "TSO": {
           "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "013944.06"
+          "VALUE-OF-TIME": "014027.18"
         },
         "TOTAL-TIME": {
           "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "089867.54"
+          "VALUE-OF-TIME": "089951.06"
         },
         "TIME-SINCE-REPAIR": {
           "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "009642.48"
+          "VALUE-OF-TIME": "009726.00"
         },
         "TIME-SINCE-OHAUL-AT-INST": {
           "SIGN-OF-THE-TIME": " ",
