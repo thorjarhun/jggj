@@ -1,0 +1,67 @@
+       01  MSO105IO.
+         03  LINE-LENGTH-01                 PIC 9(4)              COMP.
+         03  ZZ01                           PIC X(2).
+         03  TRANSACTION-CODE               PIC X(8).
+         03  INPUT-DATA.
+           05  MESSAGE-IND                  PIC X.
+             88 PGM-INITIATED-VIA-GUI             VALUE IS '5'.
+             88 FROM-MAS                          VALUE IS '6'.
+             88 FROM-SMT-FULL-ASSEMBLY            VALUE IS '7'.
+             88 FROM-SMT-FULL-ASSEMBLY-ALL        VALUE IS '8'.
+             88 FROM-MAS-1ST-LVL-ASSM             VALUE IS '9'.
+             88 FROM-PCW-1ST-LVL-ASSM             VALUE IS 'A'.
+           05  TRACKING-NUMBER              PIC X(07).
+           05  NCA-PART-NUMBER              PIC X(14).
+           05  NCA-SERIAL-NUMBER            PIC 9(05).
+         03  OUTPUT-DATA.
+             10  HISTORY-NHA.
+               15  NEXT-HIGHEST-ASSEMBLY-ID
+                                            PIC X(14).
+               15  NHA-SERIAL-NUMBER        PIC X(05).
+               15  OFF-ON-ASSEMBLY-DATE     PIC X(07).
+               15  AIRCRAFT-NUMBER          PIC X(05).
+               15  POSITION-CODE            PIC X(03).
+               15  OFF-ON-AIRCRAFT-DATE     PIC X(07).
+             10  CURRENT-NHA.
+               15  NEXT-HIGHEST-ASSEMBLY-ID
+                                            PIC X(14).
+               15  NHA-SERIAL-NUMBER        PIC X(05).
+               15  OFF-ON-ASSEMBLY-DATE     PIC X(07).
+               15  AIRCRAFT-NUMBER          PIC X(05).
+               15  POSITION-CODE            PIC X(03).
+               15  OFF-ON-AIRCRAFT-DATE     PIC X(07).
+             10  ASSEMBLY-DETAIL-COUNT      PIC 9(04).
+             10  ASSEMBLY-DETAIL       OCCURS 100.
+               15  ASSEMBLY-GROUP.
+                 20  ASSEMBLY-IND           PIC X.
+                 20  NCA-PART-NUMBER        PIC X(14).
+                 20  FILL-SPACE1            PIC X(06).
+                 20  NCA-SERIAL-NUMBER      PIC X(05).
+                 20  KEYWORD-DESCRIPTION    PIC X(50).
+                 20  KEYWORD-DESCRIPTION-WORK REDEFINES
+                                            KEYWORD-DESCRIPTION.
+                   25  KEYWORD              PIC X(15).
+                   25  DESCRIPTION          PIC X(35).
+                 20  POSITION-CODE          PIC X(03).
+               15  MFG-GROUP.
+                 20  MFG-PART-NUMBER        PIC X(20).
+                 20  FILL-SPACE1            PIC X(06).
+                 20  MFG-SERIAL-NUMBER      PIC X(15).
+                 20  FILL-SPACE2            PIC X(02).
+               15  TIME-GROUP          OCCURS 6.
+                 20  REQUEST-STATUS         PIC X(04).
+                 20  LIFE-LIMIT-IND         PIC X(01).
+                 20  TIME-STANDARD          PIC X(01).
+                 20  TIME-REMAINING         PIC X(07).
+                 20  TIME-SINCE-OVERHAUL    PIC X(06).
+                 20  TOTAL-TIME             PIC X(06).
+                 20  TIME-SINCE-INSTALLATION
+                                            PIC X(06).
+               15  FTN-GROUP.
+                 20  FTN-NUMBER             PIC X(06).
+                 20  OWNERSHIP-CODE         PIC X(05).
+         03  EXTERNAL-MESSAGE-TABLE.
+           05  EXTERNAL-MESSAGE        OCCURS 0003.
+             07  MESSAGE-IDENTIFICATION
+                                            PIC X(08).
+             07  MESSAGE-TEXT               PIC X(54).

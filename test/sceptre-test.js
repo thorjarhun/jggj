@@ -12,17 +12,6 @@ describe('executable.js', function() {
   });
 });
 */
-
-/*
-var parser = require('./transactions/parser');
-describe('parser.js', function() {
-  describe('successfully converts a set of copybooks', function () {
-    it('GACS.txt to GACS.json', function() {
-      
-    });
-  });
-});
-*/
 /*
 var requestData = {
   GACS: {
@@ -55,43 +44,107 @@ var requestData = {
 */
 var data = {
   GACS: {
+          copybook: fs.readFileSync('test/copybooks/GACS.txt'),
+          template: {
+            js: require('./templates/GACS.js'),
+            json: JSON.parse(fs.readFileSync('test/templates/GACS.json'))
+          },
           req: {
-            json: JSON.parse(fs.readFileSync('test/GACS-input.json')),
-            string: fs.readFileSync('test/GACS-input.txt')
+            json: JSON.parse(fs.readFileSync('test/transformations/GACS-input.json')),
+            string: fs.readFileSync('test/transformations/GACS-input.txt')
           },
           res: {
-            json: JSON.parse(fs.readFileSync('test/GACS-output.json')),
-            string: fs.readFileSync('test/GACS-output.txt')
+            json: JSON.parse(fs.readFileSync('test/transformations/GACS-output.json')),
+            string: fs.readFileSync('test/transformations/GACS-output.txt')
           }
         },
   GAS: {
+          copybook: fs.readFileSync('test/copybooks/GAS.txt'),
+          template: {
+            js: require('./templates/GAS.js'),
+            json: JSON.parse(fs.readFileSync('test/templates/GAS.json'))
+          },
           req: {
-            json: JSON.parse(fs.readFileSync('test/GAS-input.json')),
-            string: fs.readFileSync('test/GAS-input.txt')
+            json: JSON.parse(fs.readFileSync('test/transformations/GAS-input.json')),
+            string: fs.readFileSync('test/transformations/GAS-input.txt')
           },
           res: {
-            json: JSON.parse(fs.readFileSync('test/GAS-output.json')),
-            string: fs.readFileSync('test/GAS-output.txt')
+            json: JSON.parse(fs.readFileSync('test/transformations/GAS-output.json')),
+            string: fs.readFileSync('test/transformations/GAS-output.txt')
           }
         },
   GIPI: {
+          copybook: fs.readFileSync('test/copybooks/GIPI.txt'),
+          template: {
+            js: require('./templates/GIPI.js'),
+            json: JSON.parse(fs.readFileSync('test/templates/GIPI.json'))
+          },
           req: {
-            json: JSON.parse(fs.readFileSync('test/GIPI-input.json')),
-            string: fs.readFileSync('test/GIPI-input.txt')
+            json: JSON.parse(fs.readFileSync('test/transformations/GIPI-input.json')),
+            string: fs.readFileSync('test/transformations/GIPI-input.txt')
           },
           res: {
-            json: JSON.parse(fs.readFileSync('test/GIPI-output.json')),
-            string: fs.readFileSync('test/GIPI-output.txt')
+            json: JSON.parse(fs.readFileSync('test/transformations/GIPI-output.json')),
+            string: fs.readFileSync('test/transformations/GIPI-output.txt')
           }
         }
 };
-/*
-var responseData = {
-  GACS: JSON.parse(fs.readFileSync('test/GACS_Response.json')),
-  GAS: JSON.parse(fs.readFileSync('test/GAS_Response.json')),
-  GIPI: JSON.parse(fs.readFileSync('test/GIPI_Response.json'))
-};
-*/
+
+var child = require('child_process');
+var path = require('path');
+var concat = require('concat-stream');
+
+describe('parser.js', function() {
+  var parser = path.join(__dirname, '..', 'transactions', 'parser.js');
+
+  describe('successfully converts a set of copybooks', function () {
+    var test = function(tran) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      it(tran + '.txt to stdout', function(done) {
+        var proc = child.spawn('node', [parser, 'transactions/copybooks/' + tran + '.txt'].concat(args));
+
+        proc.stdout.pipe(concat(function(output) {
+          var template = JSON.parse(output);
+          assert.deepEqual(template, data[tran].template.json);
+          done();
+        }));
+      });
+    };
+    test('GACS', '-r');
+    test('GAS');
+    test('GIPI', '-r');
+    /*
+    it('GACS.txt to GACS.json', function(done) {
+      var proc = child.spawn('node', [parser, 'transactions/copybooks/GACS.txt', '-r']);
+
+      proc.stdout.pipe(concat(function(output) {
+        var template = JSON.parse(output);
+        assert.deepEqual(template, data.GACS.template.json);
+        done();
+      }));
+    });
+    it('GAS.txt to GAS.json', function(done) {
+      var proc = child.spawn('node', [parser, 'transactions/copybooks/GAS.txt', '-r']);
+
+      proc.stdout.pipe(concat(function(output) {
+        var template = JSON.parse(output);
+        assert.deepEqual(template, data.GAS.template.json);
+        done();
+      }));
+    });
+    it('GIPI.txt to GIPI.json', function(done) {
+      var proc = child.spawn('node', [parser, 'transactions/copybooks/GIPI.txt', '-r']);
+
+      proc.stdout.pipe(concat(function(output) {
+        var template = JSON.parse(output);
+        assert.deepEqual(template, data.GIPI.template.json);
+        done();
+      }));
+    });
+    */
+  });
+});
+
 
 //console.log(JSON.stringify(responseData, null, 2));
 
@@ -100,7 +153,7 @@ describe('/tran route', function() {
   var url = "http://localhost:8000/tran";
   /*
   var options = {
-    url: 'http://localhost:9080/PCW/rest/api/proxy',
+    url: 'http://localhost:9080/PCW/service/api/proxy',
     method: 'POST',
     body: query
   };

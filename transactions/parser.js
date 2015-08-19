@@ -16,6 +16,12 @@ process.stdin
 // when they don't want any more data
 process.stdout.on('error', process.exit);
 */
+var _ = require('lodash');
+var fs = require('fs');
+
+
+//console.log(process.argv);
+
 
 var argv = require('minimist')(process.argv.slice(2), {
   string: ['i', 'o', 'r'],
@@ -31,14 +37,15 @@ if (!('i' in argv)) {
   if (!argv._.length) {
     console.log("Input file name required.");
     process.exit();
+  } else {
+    argv.i = argv._[0];
   }
-  argv.i = argv._[0];
 }
 
-var _ = require('lodash');
 
-var fs = require('fs');
-var obj = fs.readFileSync(argv.i.trim()).toString().split('\n').map(function(line) {
+var copybook = fs.readFileSync(argv.i.trim()).toString();
+
+var obj = copybook.split('\n').map(function(line) {
   if (line[0] === "0") {
     //return line.match(/\d{6}(.*)\d{8}/)[1].trim();
     return line.match(/\d{6}([^\.]*).*\d{8}/)[1].trim();
