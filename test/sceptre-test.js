@@ -96,52 +96,49 @@ var concat = require('concat-stream');
 
 describe('parser.js', function() {
   var parser = path.join(__dirname, '..', 'transactions', 'parser.js');
+  //console.log(parser.toString());
 
   describe('successfully converts a set of copybooks', function () {
-    var test = function(tran) {
-      var args = Array.prototype.slice.call(arguments, 1);
-      it(tran + '.txt to stdout', function(done) {
-        var proc = child.spawn('node', [parser, 'transactions/copybooks/' + tran + '.txt'].concat(args));
+    describe('by passing in the file names', function() {
+      var testFromFile = function(tran) {
+        var copybook = 'transactions/copybooks/' + tran + '.txt';
+        var args = [copybook].concat(Array.prototype.slice.call(arguments, 1));
+        //it(tran + '.txt to stdout', function(done) {
+        it('node transactions/parser.js ' + args.join(' '), function(done) {
+          var proc = child.fork(parser, args, {silent: true});
 
-        proc.stdout.pipe(concat(function(output) {
-          var template = JSON.parse(output);
-          assert.deepEqual(template, data[tran].template.json);
-          done();
-        }));
-      });
-    };
-    test('GACS', '-r');
-    test('GAS');
-    test('GIPI', '-r');
-    /*
-    it('GACS.txt to GACS.json', function(done) {
-      var proc = child.spawn('node', [parser, 'transactions/copybooks/GACS.txt', '-r']);
-
-      proc.stdout.pipe(concat(function(output) {
-        var template = JSON.parse(output);
-        assert.deepEqual(template, data.GACS.template.json);
-        done();
-      }));
+          proc.stdout.pipe(concat(function(output) {
+            var template = JSON.parse(output);
+            assert.deepEqual(template, data[tran].template.json);
+            done();
+          }));
+        });
+      };
+      testFromFile('GACS', '-r');
+      testFromFile('GAS');
+      testFromFile('GIPI', '-r');
     });
-    it('GAS.txt to GAS.json', function(done) {
-      var proc = child.spawn('node', [parser, 'transactions/copybooks/GAS.txt', '-r']);
+    describe('by piping in the copybook contents', function() {
+      var testFromStream = function(tran) {
+        var copybook = 'transactions/copybooks/' + tran + '.txt';
+        var args = Array.prototype.slice.call(arguments, 1);
+        it('cat ' + copybook + ' | node transactions/parser.js ' + args.join(' '), function(done) {
+          var proc = child.fork(parser, args, {silent: true});
 
-      proc.stdout.pipe(concat(function(output) {
-        var template = JSON.parse(output);
-        assert.deepEqual(template, data.GAS.template.json);
-        done();
-      }));
-    });
-    it('GIPI.txt to GIPI.json', function(done) {
-      var proc = child.spawn('node', [parser, 'transactions/copybooks/GIPI.txt', '-r']);
+          fs.createReadStream(copybook).pipe(proc.stdin);
 
-      proc.stdout.pipe(concat(function(output) {
-        var template = JSON.parse(output);
-        assert.deepEqual(template, data.GIPI.template.json);
-        done();
-      }));
+          proc.stdout.pipe(concat(function(output) {
+            var template = JSON.parse(output);
+            assert.deepEqual(template, data[tran].template.json);
+            done();
+          }));
+        });
+      };
+
+      testFromStream('GACS', '-r');
+      testFromStream('GAS');
+      testFromStream('GIPI', '-r');
     });
-    */
   });
 });
 
