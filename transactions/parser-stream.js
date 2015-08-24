@@ -44,21 +44,24 @@ function parseCopybook(copybook) {
   function regex(expr) {
     var line1 = "000810         88 PCW-CREATE-DASH8                 VALUE '3'.           00000810";
     var line2 = "         88 PCW-CREATE-DASH8                 VALUE '3'.           ";
+    var line3 = "002400       07  TIME-SINCE-OHAUL-AT-INST                               00002400";
+    var line4 = "       07  TIME-SINCE-OHAUL-AT-INST                               "
     var result = [];
     result.push(line1.match(expr));
-    result.push(line1.match(new RegExp(expr.source, 'g')));
     result.push(line2.match(expr));
+    result.push(line3.match(expr));
+    result.push(line4.match(expr));
+    result.push(line1.match(new RegExp(expr.source, 'g')));
     result.push(line2.match(new RegExp(expr.source, 'g')));
+    result.push(line3.match(new RegExp(expr.source, 'g')));
+    result.push(line4.match(new RegExp(expr.source, 'g')));
     return result;
   }
   */
   function trimSideNumbers(line) {
-    if (line[0] === "0") {
-      //return line.match(/\d{6}(.*)\d{8}/)[1].trim();
-      return line.match(/\d{6}([^\.]*).*\d{8}/)[1].trim();
-    }
-    //return line.match(/[^\.]*/);
-    return line.match(/[^\.]*/)[0].trim();
+    //return line.match(/^[\d{6}]?([^\.]*).*[\d{8}]?/)[1].trim();
+    //return line.replace(/\d{6}/, "").replace(/\d{8}$/, "").trim();
+    return line.match(/^(?:\d{6})?(.*)/)[1].replace(/\d{8}$/, "").trim();
   }
 
   function mergeSplitLines(a, line) {
@@ -71,11 +74,12 @@ function parseCopybook(copybook) {
   }
 
   function parseLineToObject(a, item, i, arr) {
+    item = item.match(/[^\.]*/)[0];
     //debugger;
     if (i === 0) {
       a.level = item;
     } else if (i === 1) {
-      a.name = item.match(/[^\.]*/)[0];
+      a.name = item;
     } else if (i === 3) {
       if (arr[2] === "OCCURS") {
         //a.children = [];
