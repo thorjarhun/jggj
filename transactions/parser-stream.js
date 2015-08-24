@@ -40,7 +40,18 @@ function parseCopybook(copybook) {
     console.log(copybook);
     throw new Error("parseCopybook expected input of type string but received a " + format + ": " + JSON.stringify(copybook, null, 2));
   }
-
+  /*
+  function regex(expr) {
+    var line1 = "000810         88 PCW-CREATE-DASH8                 VALUE '3'.           00000810";
+    var line2 = "         88 PCW-CREATE-DASH8                 VALUE '3'.           ";
+    var result = [];
+    result.push(line1.match(expr));
+    result.push(line1.match(new RegExp(expr.source, 'g')));
+    result.push(line2.match(expr));
+    result.push(line2.match(new RegExp(expr.source, 'g')));
+    return result;
+  }
+  */
   function trimSideNumbers(line) {
     if (line[0] === "0") {
       //return line.match(/\d{6}(.*)\d{8}/)[1].trim();

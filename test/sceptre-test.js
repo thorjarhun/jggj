@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'test';
+//process.env.NODE_ENV = 'test';
 var fs = require('fs');
 var assert = require("assert");
 var request = require('request');
@@ -51,11 +51,11 @@ var data = {
           },
           req: {
             json: JSON.parse(fs.readFileSync('test/transformations/GACS-input.json')),
-            string: fs.readFileSync('test/transformations/GACS-input.txt')
+            string: fs.readFileSync('test/transformations/GACS-input.txt').toString()
           },
           res: {
             json: JSON.parse(fs.readFileSync('test/transformations/GACS-output.json')),
-            string: fs.readFileSync('test/transformations/GACS-output.txt')
+            string: fs.readFileSync('test/transformations/GACS-output.txt').toString()
           }
         },
   GAS: {
@@ -66,11 +66,11 @@ var data = {
           },
           req: {
             json: JSON.parse(fs.readFileSync('test/transformations/GAS-input.json')),
-            string: fs.readFileSync('test/transformations/GAS-input.txt')
+            string: fs.readFileSync('test/transformations/GAS-input.txt').toString()
           },
           res: {
             json: JSON.parse(fs.readFileSync('test/transformations/GAS-output.json')),
-            string: fs.readFileSync('test/transformations/GAS-output.txt')
+            string: fs.readFileSync('test/transformations/GAS-output.txt').toString()
           }
         },
   GIPI: {
@@ -81,11 +81,11 @@ var data = {
           },
           req: {
             json: JSON.parse(fs.readFileSync('test/transformations/GIPI-input.json')),
-            string: fs.readFileSync('test/transformations/GIPI-input.txt')
+            string: fs.readFileSync('test/transformations/GIPI-input.txt').toString()
           },
           res: {
             json: JSON.parse(fs.readFileSync('test/transformations/GIPI-output.json')),
-            string: fs.readFileSync('test/transformations/GIPI-output.txt')
+            string: fs.readFileSync('test/transformations/GIPI-output.txt').toString()
           }
         }
 };
