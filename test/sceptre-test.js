@@ -2,6 +2,7 @@
 var fs = require('fs');
 var assert = require("assert");
 var request = require('request');
+var stream = require('stream');
 /*
 describe('executable.js', function() {
   describe('transform & request mode', function () {
@@ -126,6 +127,11 @@ describe('parser.js', function() {
           var proc = child.fork(parser, args, {silent: true});
 
           fs.createReadStream(copybook).pipe(proc.stdin);
+          //var copybookStream = new stream.Readable();
+          //copybookStream._read = function noop() {};
+          //copybookStream.push(data[tran].copybook);
+          //copybookStream.push(null);
+          //copybookStream.pipe(proc.stdin);
 
           proc.stdout.pipe(concat(function(output) {
             var template = JSON.parse(output);
@@ -198,42 +204,42 @@ describe('/tran route', function() {
 
 var sceptre = require('../lib/sceptre.js');
 describe('sceptre.js', function() {
-  describe('parseJSON takes an object in JSON and returns a string to send to sceptre', function() {
+  describe('fromJSON takes an object in JSON and returns a string to send to sceptre', function() {
     it('Sample JSON for GACS', function() {
       var input = data.GACS.req.json;
-      var output = sceptre.parseJSON(input);
+      var output = sceptre.fromJSON(input);
       var expected = data.GACS.req.string;
       assert.equal(output, expected);
     });
     it('Sample JSON for GAS', function() {
       var input = data.GAS.req.json;
-      var output = sceptre.parseJSON(input);
+      var output = sceptre.fromJSON(input);
       var expected = data.GAS.req.string;
       assert.equal(output, expected);
     });
     it('Sample JSON for GIPI', function() {
       var input = data.GIPI.req.json;
-      var output = sceptre.parseJSON(input);
+      var output = sceptre.fromJSON(input);
       var expected = data.GIPI.req.string;
       assert.equal(output, expected);
     });
   });
-  describe('buildJSON takes a fixed-width formatted string from sceptre and returns an object in JSON', function() {
+  describe('toJSON takes a fixed-width formatted string from sceptre and returns an object in JSON', function() {
     it('Sample String for GACS', function() {
       var input = data.GACS.res.string;
-      var output = sceptre.buildJSON('GACS', input);
+      var output = sceptre.toJSON('GACS', input);
       var expected = data.GACS.res.json;
       assert.deepEqual(output, expected);
     });
     it('Sample String for GAS', function() {
       var input = data.GAS.res.string;
-      var output = sceptre.buildJSON('GAS', input);
+      var output = sceptre.toJSON('GAS', input);
       var expected = data.GAS.res.json;
       assert.deepEqual(output, expected);
     });
     it('Sample String for GIPI', function() {
       var input = data.GIPI.res.string;
-      var output = sceptre.buildJSON('GIPI', input);
+      var output = sceptre.toJSON('GIPI', input);
       var expected = data.GIPI.res.json;
       assert.deepEqual(output, expected);
     });

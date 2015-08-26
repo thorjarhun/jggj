@@ -1,0 +1,30 @@
+{
+  "transaction-code": "GACS",
+  "function-cde": "3",
+  "option-cde": "3",
+  "gacs-stk-num": "56-0511-8-0003",
+  "gacs-ser-num": "16307",
+  "employee-num": "0000537711",
+  "iuc-comment": "",
+  "gacs-install-date": "1997-06-11",
+  "tso-group": [
+    {
+      "time-standard-desc": "CYCLES",
+      "tso": "0019455:00",
+      "time-since-ohaul-at-inst": "0014123:00",
+      "time-since-rep-at-inst": "0000000:00",
+      "tso-at-removal": "INSTALD-NA",
+      "total-time": "0014123:00",
+      "n-h-a-tso-at-installation": "0000000:00"
+    },
+    {
+      "time-standard-desc": "FLYING TIME",
+      "tso": "0050389:45",
+      "time-since-ohaul-at-inst": "0036286:09",
+      "time-since-rep-at-inst": "0000000:00",
+      "tso-at-removal": "INSTALD-NA",
+      "total-time": "0036286:09",
+      "n-h-a-tso-at-installation": "0000000:00"
+    }
+  ]
+}

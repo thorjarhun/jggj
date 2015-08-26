@@ -1,282 +1,288 @@
 {
-  "TRANSACTION-CODE": "GACS    ",
-  "FUNCTION-CDE": "3",
-  "OPTION-CDE": "6",
-  "GACS-STK-NUM": "56-7110-9-0010",
-  "GACS-SER-NUM": "16307",
-  "EMPLOYEE-NUM": "0000537711",
-  "IUC-COMMENT": "                                                                ",
-  "GACS-INSTALL-DATE": "          ",
-  "TSO-GROUP": [
-    {
-      "TIME-STANDARD-DESC": "0000            ",
-      "TSO": "          ",
-      "TIME-SINCE-OHAUL-AT-INST": "          ",
-      "TIME-SINCE-REP-AT-INST": "          ",
-      "TSO-AT-REMOVAL": "          ",
-      "TOTAL-TIME": "          ",
-      "N-H-A-TSO-AT-INSTALLATION": "          "
+  "MII101IO": {
+    "TRANSACTION-CODE": "GACS    ",
+    "INPUT-DATA": {
+      "FUNCTION-CDE": "3",
+      "OPTION-CDE": "6",
+      "GACS-STK-NUM": "56-7110-9-0010",
+      "GACS-SER-NUM": "16307",
+      "EMPLOYEE-NUM": "0000537711",
+      "IUC-COMMENT": "                                                                ",
+      "GACS-INSTALL-DATE": "          ",
+      "TSO-GROUP": [
+        {
+          "TIME-STANDARD-DESC": "                ",
+          "TSO": "          ",
+          "TIME-SINCE-OHAUL-AT-INST": "          ",
+          "TIME-SINCE-REP-AT-INST": "          ",
+          "TSO-AT-REMOVAL": "          ",
+          "TOTAL-TIME": "          ",
+          "N-H-A-TSO-AT-INSTALLATION": "          "
+        },
+        {
+          "TIME-STANDARD-DESC": "                ",
+          "TSO": "          ",
+          "TIME-SINCE-OHAUL-AT-INST": "          ",
+          "TIME-SINCE-REP-AT-INST": "          ",
+          "TSO-AT-REMOVAL": "          ",
+          "TOTAL-TIME": "          ",
+          "N-H-A-TSO-AT-INSTALLATION": "          "
+        },
+        {
+          "TIME-STANDARD-DESC": "                ",
+          "TSO": "          ",
+          "TIME-SINCE-OHAUL-AT-INST": "          ",
+          "TIME-SINCE-REP-AT-INST": "          ",
+          "TSO-AT-REMOVAL": "          ",
+          "TOTAL-TIME": "          ",
+          "N-H-A-TSO-AT-INSTALLATION": "          "
+        },
+        {
+          "TIME-STANDARD-DESC": "                ",
+          "TSO": "          ",
+          "TIME-SINCE-OHAUL-AT-INST": "          ",
+          "TIME-SINCE-REP-AT-INST": "          ",
+          "TSO-AT-REMOVAL": "          ",
+          "TOTAL-TIME": "          ",
+          "N-H-A-TSO-AT-INSTALLATION": "          "
+        }
+      ]
     },
-    {
-      "TIME-STANDARD-DESC": "                ",
-      "TSO": "          ",
-      "TIME-SINCE-OHAUL-AT-INST": "          ",
-      "TIME-SINCE-REP-AT-INST": "          ",
-      "TSO-AT-REMOVAL": "          ",
-      "TOTAL-TIME": "          ",
-      "N-H-A-TSO-AT-INSTALLATION": "          "
-    },
-    {
-      "TIME-STANDARD-DESC": "                ",
-      "TSO": "          ",
-      "TIME-SINCE-OHAUL-AT-INST": "          ",
-      "TIME-SINCE-REP-AT-INST": "          ",
-      "TSO-AT-REMOVAL": "          ",
-      "TOTAL-TIME": "          ",
-      "N-H-A-TSO-AT-INSTALLATION": "          "
-    },
-    {
-      "TIME-STANDARD-DESC": "                ",
-      "TSO": "          ",
-      "TIME-SINCE-OHAUL-AT-INST": "          ",
-      "TIME-SINCE-REP-AT-INST": "          ",
-      "TSO-AT-REMOVAL": "          ",
-      "TOTAL-TIME": "          ",
-      "N-H-A-TSO-AT-INSTALLATION": "          "
+    "OUTPUT-DATA": {
+      "ARF-STOCK-NUM": "              ",
+      "ARF-SERIAL-NUM": "     ",
+      "EXTERNAL-MESSAGE-TABLE": {
+        "EXTERNAL-MESSAGE": [
+          {
+            "MESSAGE-IDENTIFICATION": "        ",
+            "MESSAGE-TEXT": "                                                      "
+          },
+          {
+            "MESSAGE-IDENTIFICATION": "        ",
+            "MESSAGE-TEXT": "                                                      "
+          },
+          {
+            "MESSAGE-IDENTIFICATION": "        ",
+            "MESSAGE-TEXT": "                                                      "
+          }
+        ]
+      },
+      "ICS-ORIG-FINAL-DATA": {
+        "ICS-START-TAG": "     ",
+        "NCA-PART-NUM": "              ",
+        "NCA-SERIAL-NUM": "     ",
+        "KEYWORD": "               ",
+        "DESCRIPTION": "                                   ",
+        "CALCULATED-DATE": {
+          "CALCULATED-DAY": "  ",
+          "CALCULATED-MONTH": "   ",
+          "CALCULATED-YEAR": "  "
+        },
+        "INSTALLED-DATE": {
+          "INSTALLED-DAY": "  ",
+          "INSTALLED-MONTH": "   ",
+          "INSTALLED-YEAR": "  "
+        },
+        "TSO-GROUP": [
+          {
+            "TIME-STANDARD-DESC": "                ",
+            "TIME-ERROR-IND": " ",
+            "TSO": "          ",
+            "TIME-SINCE-OHAUL-AT-INST": "          ",
+            "TIME-SINCE-REP-AT-INST": "          ",
+            "TSO-AT-REMOVAL": "          ",
+            "TOTAL-TIME": "          ",
+            "N-H-A-TSO-AT-INSTALLATION": "          "
+          },
+          {
+            "TIME-STANDARD-DESC": "                ",
+            "TIME-ERROR-IND": " ",
+            "TSO": "          ",
+            "TIME-SINCE-OHAUL-AT-INST": "          ",
+            "TIME-SINCE-REP-AT-INST": "          ",
+            "TSO-AT-REMOVAL": "          ",
+            "TOTAL-TIME": "          ",
+            "N-H-A-TSO-AT-INSTALLATION": "          "
+          },
+          {
+            "TIME-STANDARD-DESC": "                ",
+            "TIME-ERROR-IND": " ",
+            "TSO": "          ",
+            "TIME-SINCE-OHAUL-AT-INST": "          ",
+            "TIME-SINCE-REP-AT-INST": "          ",
+            "TSO-AT-REMOVAL": "          ",
+            "TOTAL-TIME": "          ",
+            "N-H-A-TSO-AT-INSTALLATION": "          "
+          },
+          {
+            "TIME-STANDARD-DESC": "                ",
+            "TIME-ERROR-IND": " ",
+            "TSO": "          ",
+            "TIME-SINCE-OHAUL-AT-INST": "          ",
+            "TIME-SINCE-REP-AT-INST": "          ",
+            "TSO-AT-REMOVAL": "          ",
+            "TOTAL-TIME": "          ",
+            "N-H-A-TSO-AT-INSTALLATION": "          "
+          }
+        ],
+        "ICS-END-TAG": "      "
+      },
+      "IES-FINAL-DATA": {
+        "IES-START-TAG": "<IES>",
+        "NCA-PART-NUMBER": "56-7110-9-0010",
+        "NCA-SERIAL-NUMBER": "16307",
+        "PART-DATA": {
+          "FTN-NUMBER": "716307",
+          "MFG-PART-NUMBER": "PW2037              ",
+          "MFG-SERIAL-NUMBER": "716307         ",
+          "KEYWORD-DESCRIPTION": "POWER PLANT, PW2037-CET; 757 A/C; NAFE            ",
+          "OWNER-CODE": "DLN  ",
+          "PRIME-SHOP": "283",
+          "SERVICEABILITY-DESC": "SERVICEABLE  ",
+          "POSITION-CODE": "002",
+          "DESCRIPTION-CODE": "          ",
+          "ON-OFF-LIT": " ON",
+          "AIRCRAFT-NUMBER": "00696",
+          "AC-POSITION-CODE": "002",
+          "TRACKING-LOCATION": "INSTALLED ON A/C 0696                     ",
+          "PREVIOUS-LOCATION": "INSTALLED ON A/C 0633                     ",
+          "TYPE-MAINTENANCE": "REPAIR      ",
+          "MAINTENANCE-DATE": {
+            "DAYS": "14",
+            "MONTH": "OCT",
+            "YEAR": "12"
+          },
+          "WORK-CONTROL-LIT": "                               "
+        },
+        "NHA-DATA": {
+          "ON-OFF-LIT": " ON",
+          "NHA-PART-NUMBER": "56-2000-9-0001",
+          "NHA-SERIAL-NUMBER": "00696",
+          "NHA-MFG-SER-NUM": "29728          ",
+          "NHA-KEYWORD": "A/C            ",
+          "INST-NHA-DATE": {
+            "DAYS": "23",
+            "MONTH": "OCT",
+            "YEAR": "12"
+          },
+          "ON-OFF-AC-DATE": {
+            "DAYS": "23",
+            "MONTH": "OCT",
+            "YEAR": "12"
+          }
+        },
+        "TIME-GROUP": [
+          {
+            "TIME-STANDARD-DESC": "CYCLES                  ",
+            "TSO": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "005333.00"
+            },
+            "TOTAL-TIME": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "042190.00"
+            },
+            "TIME-SINCE-REPAIR": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "003548.00"
+            },
+            "TIME-SINCE-OHAUL-AT-INST": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "001785.00"
+            },
+            "ALLOWABLE-TTO": "000000   ",
+            "ALLOWABLE-TIME-TO-OHAUL-SRC": "G",
+            "ALLOWABLE-LIFE": " 000000   ",
+            "ALLOWABLE-LIFE-SRC": "G",
+            "TIME-REMAINING": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "NA       "
+            }
+          },
+          {
+            "TIME-STANDARD-DESC": "FLYING TIME             ",
+            "TSO": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "014107.54"
+            },
+            "TOTAL-TIME": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "090031.42"
+            },
+            "TIME-SINCE-REPAIR": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "009806.36"
+            },
+            "TIME-SINCE-OHAUL-AT-INST": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "004301.18"
+            },
+            "ALLOWABLE-TTO": "000000   ",
+            "ALLOWABLE-TIME-TO-OHAUL-SRC": "G",
+            "ALLOWABLE-LIFE": " 000000   ",
+            "ALLOWABLE-LIFE-SRC": "G",
+            "TIME-REMAINING": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "NA       "
+            }
+          },
+          {
+            "TIME-STANDARD-DESC": "                        ",
+            "TSO": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "TOTAL-TIME": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "TIME-SINCE-REPAIR": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "TIME-SINCE-OHAUL-AT-INST": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "ALLOWABLE-TTO": "         ",
+            "ALLOWABLE-TIME-TO-OHAUL-SRC": " ",
+            "ALLOWABLE-LIFE": "          ",
+            "ALLOWABLE-LIFE-SRC": " ",
+            "TIME-REMAINING": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            }
+          },
+          {
+            "TIME-STANDARD-DESC": "                        ",
+            "TSO": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "TOTAL-TIME": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "TIME-SINCE-REPAIR": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "TIME-SINCE-OHAUL-AT-INST": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            },
+            "ALLOWABLE-TTO": "         ",
+            "ALLOWABLE-TIME-TO-OHAUL-SRC": " ",
+            "ALLOWABLE-LIFE": "          ",
+            "ALLOWABLE-LIFE-SRC": " ",
+            "TIME-REMAINING": {
+              "SIGN-OF-THE-TIME": " ",
+              "VALUE-OF-TIME": "         "
+            }
+          }
+        ],
+        "IES-END-TAG": "</IES>"
+      }
     }
-  ],
-  "ARF-STOCK-NUM": "              ",
-  "ARF-SERIAL-NUM": "     ",
-  "EXTERNAL-MESSAGE-TABLE": {
-    "EXTERNAL-MESSAGE": [
-      {
-        "MESSAGE-IDENTIFICATION": "        ",
-        "MESSAGE-TEXT": "                                                      "
-      },
-      {
-        "MESSAGE-IDENTIFICATION": "        ",
-        "MESSAGE-TEXT": "                                                      "
-      },
-      {
-        "MESSAGE-IDENTIFICATION": "        ",
-        "MESSAGE-TEXT": "                                                      "
-      }
-    ]
-  },
-  "ICS-ORIG-FINAL-DATA": {
-    "ICS-START-TAG": "     ",
-    "NCA-PART-NUM": "              ",
-    "NCA-SERIAL-NUM": "     ",
-    "KEYWORD": "               ",
-    "DESCRIPTION": "                                   ",
-    "CALCULATED-DATE": {
-      "CALCULATED-DAY": "  ",
-      "CALCULATED-MONTH": "   ",
-      "CALCULATED-YEAR": "  "
-    },
-    "INSTALLED-DATE": {
-      "INSTALLED-DAY": "  ",
-      "INSTALLED-MONTH": "   ",
-      "INSTALLED-YEAR": "  "
-    },
-    "TSO-GROUP": [
-      {
-        "TIME-STANDARD-DESC": "                ",
-        "TIME-ERROR-IND": " ",
-        "TSO": "          ",
-        "TIME-SINCE-OHAUL-AT-INST": "          ",
-        "TIME-SINCE-REP-AT-INST": "          ",
-        "TSO-AT-REMOVAL": "          ",
-        "TOTAL-TIME": "          ",
-        "N-H-A-TSO-AT-INSTALLATION": "          "
-      },
-      {
-        "TIME-STANDARD-DESC": "                ",
-        "TIME-ERROR-IND": " ",
-        "TSO": "          ",
-        "TIME-SINCE-OHAUL-AT-INST": "          ",
-        "TIME-SINCE-REP-AT-INST": "          ",
-        "TSO-AT-REMOVAL": "          ",
-        "TOTAL-TIME": "          ",
-        "N-H-A-TSO-AT-INSTALLATION": "          "
-      },
-      {
-        "TIME-STANDARD-DESC": "                ",
-        "TIME-ERROR-IND": " ",
-        "TSO": "          ",
-        "TIME-SINCE-OHAUL-AT-INST": "          ",
-        "TIME-SINCE-REP-AT-INST": "          ",
-        "TSO-AT-REMOVAL": "          ",
-        "TOTAL-TIME": "          ",
-        "N-H-A-TSO-AT-INSTALLATION": "          "
-      },
-      {
-        "TIME-STANDARD-DESC": "                ",
-        "TIME-ERROR-IND": " ",
-        "TSO": "          ",
-        "TIME-SINCE-OHAUL-AT-INST": "          ",
-        "TIME-SINCE-REP-AT-INST": "          ",
-        "TSO-AT-REMOVAL": "          ",
-        "TOTAL-TIME": "          ",
-        "N-H-A-TSO-AT-INSTALLATION": "          "
-      }
-    ],
-    "ICS-END-TAG": "      "
-  },
-  "IES-FINAL-DATA": {
-    "IES-START-TAG": "<IES>",
-    "NCA-PART-NUMBER": "56-7110-9-0010",
-    "NCA-SERIAL-NUMBER": "16307",
-    "PART-DATA": {
-      "FTN-NUMBER": "716307",
-      "MFG-PART-NUMBER": "PW2037              ",
-      "MFG-SERIAL-NUMBER": "716307         ",
-      "KEYWORD-DESCRIPTION": "POWER PLANT, PW2037-CET; 757 A/C; NAFE            ",
-      "OWNER-CODE": "DLN  ",
-      "PRIME-SHOP": "283",
-      "SERVICEABILITY-DESC": "SERVICEABLE  ",
-      "POSITION-CODE": "002",
-      "DESCRIPTION-CODE": "          ",
-      "ON-OFF-LIT": " ON",
-      "AIRCRAFT-NUMBER": "00696",
-      "AC-POSITION-CODE": "002",
-      "TRACKING-LOCATION": "INSTALLED ON A/C 0696                     ",
-      "PREVIOUS-LOCATION": "INSTALLED ON A/C 0633                     ",
-      "TYPE-MAINTENANCE": "REPAIR      ",
-      "MAINTENANCE-DATE": {
-        "DAYS": "14",
-        "MONTH": "OCT",
-        "YEAR": "12"
-      },
-      "WORK-CONTROL-LIT": "                               "
-    },
-    "NHA-DATA": {
-      "ON-OFF-LIT": " ON",
-      "NHA-PART-NUMBER": "56-2000-9-0001",
-      "NHA-SERIAL-NUMBER": "00696",
-      "NHA-MFG-SER-NUM": "29728          ",
-      "NHA-KEYWORD": "A/C            ",
-      "INST-NHA-DATE": {
-        "DAYS": "23",
-        "MONTH": "OCT",
-        "YEAR": "12"
-      },
-      "ON-OFF-AC-DATE": {
-        "DAYS": "23",
-        "MONTH": "OCT",
-        "YEAR": "12"
-      }
-    },
-    "TIME-GROUP": [
-      {
-        "TIME-STANDARD-DESC": "CYCLES                  ",
-        "TSO": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "005309.00"
-        },
-        "TOTAL-TIME": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "042166.00"
-        },
-        "TIME-SINCE-REPAIR": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "003524.00"
-        },
-        "TIME-SINCE-OHAUL-AT-INST": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "001785.00"
-        },
-        "ALLOWABLE-TTO": "000000   ",
-        "ALLOWABLE-TIME-TO-OHAUL-SRC": "G",
-        "ALLOWABLE-LIFE": " 000000   ",
-        "ALLOWABLE-LIFE-SRC": "G",
-        "TIME-REMAINING": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "NA       "
-        }
-      },
-      {
-        "TIME-STANDARD-DESC": "FLYING TIME             ",
-        "TSO": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "014027.18"
-        },
-        "TOTAL-TIME": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "089951.06"
-        },
-        "TIME-SINCE-REPAIR": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "009726.00"
-        },
-        "TIME-SINCE-OHAUL-AT-INST": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "004301.18"
-        },
-        "ALLOWABLE-TTO": "000000   ",
-        "ALLOWABLE-TIME-TO-OHAUL-SRC": "G",
-        "ALLOWABLE-LIFE": " 000000   ",
-        "ALLOWABLE-LIFE-SRC": "G",
-        "TIME-REMAINING": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "NA       "
-        }
-      },
-      {
-        "TIME-STANDARD-DESC": "                        ",
-        "TSO": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "TOTAL-TIME": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "TIME-SINCE-REPAIR": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "TIME-SINCE-OHAUL-AT-INST": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "ALLOWABLE-TTO": "         ",
-        "ALLOWABLE-TIME-TO-OHAUL-SRC": " ",
-        "ALLOWABLE-LIFE": "          ",
-        "ALLOWABLE-LIFE-SRC": " ",
-        "TIME-REMAINING": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        }
-      },
-      {
-        "TIME-STANDARD-DESC": "                        ",
-        "TSO": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "TOTAL-TIME": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "TIME-SINCE-REPAIR": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "TIME-SINCE-OHAUL-AT-INST": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        },
-        "ALLOWABLE-TTO": "         ",
-        "ALLOWABLE-TIME-TO-OHAUL-SRC": " ",
-        "ALLOWABLE-LIFE": "          ",
-        "ALLOWABLE-LIFE-SRC": " ",
-        "TIME-REMAINING": {
-          "SIGN-OF-THE-TIME": " ",
-          "VALUE-OF-TIME": "         "
-        }
-      }
-    ],
-    "IES-END-TAG": "</IES>"
   }
 }

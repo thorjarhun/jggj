@@ -1,805 +1,813 @@
 {
-  "TRANSACTION-CODE": "GIPI    ",
-  "FUNCTION-CDE": "1",
-  "INSP-NWA-STK-NUM": "55-0579-8-0037",
-  "EXTERNAL-MESSAGE": [
-    {
-      "MESSAGE-IDENTIFICATION": "        ",
-      "MESSAGE-TEXT": "                                                      "
+  "MII103IO": {
+    "TRANSACTION-CODE": "GIPI    ",
+    "INPUT-DATA": {
+      "FUNCTION-CDE": "1",
+      "INSP-NWA-STK-NUM": "55-0579-8-0037"
     },
-    {
-      "MESSAGE-IDENTIFICATION": "        ",
-      "MESSAGE-TEXT": "                                                      "
+    "EXTERNAL-MESSAGE-TABLE": {
+      "EXTERNAL-MESSAGE": [
+        {
+          "MESSAGE-IDENTIFICATION": "        ",
+          "MESSAGE-TEXT": "                                                      "
+        },
+        {
+          "MESSAGE-IDENTIFICATION": "        ",
+          "MESSAGE-TEXT": "                                                      "
+        }
+      ]
+    },
+    "OUTPUT-DATA": {
+      "NWA-STOCK-NUM": "55-0579-8-0037",
+      "CONTROL-PROGRAM": "014",
+      "FILLER": " ",
+      "CONTROL-PROGRAM-DESC": "SPECIAL        ",
+      "RECORDS-REQUIRED-IND": "Y",
+      "MFG-PART-NUMBER": "0M328#514948        ",
+      "AA-STATUS-LABEL": "        ",
+      "AA-STATUS": "           ",
+      "AA-WORK-SECTION-LABEL": "                   ",
+      "AA-WORK-SECTION-NUMBER": "00",
+      "AA-WORK-SECTION-TITLE": "                                                                ",
+      "AA-DESCRIPTION-LABEL": "                ",
+      "AA-DESCRIPTION": "                                                  ",
+      "ALTERNATE-DETAILS": [
+        {
+          "START-TAG": "<ALT>",
+          "NWA-STK-NUM": "55-0579-8-0037",
+          "INSPECTION-TYPE": "N/A",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "CHECK, 55, ENG OIL FILTER CHG;REDUCED INTERVAL;N/A",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": "L",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": "T",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "</ALT>"
+        },
+        {
+          "START-TAG": "<ALT>",
+          "NWA-STK-NUM": "58-0579-8-0036",
+          "INSPECTION-TYPE": "INI",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "CHECK, 58, CEP;OIL FILTER CHG;REDUCED INTERVAL;INI",
+          "REFERENCE-INFO": "REQUIRED WITHIN 100 HRS AFTER ENGINE CHANGE       ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": "L",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": "T",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000100.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "</ALT>"
+        },
+        {
+          "START-TAG": "<ALT>",
+          "NWA-STK-NUM": "58-0579-8-0037",
+          "INSPECTION-TYPE": "N/A",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "CHECK, 58, CEP;OIL FILTER CHG;REDUCED INTERVAL;N/A",
+          "REFERENCE-INFO": "OM328#514948                                      ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": "L",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": "T",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "</ALT>"
+        },
+        {
+          "START-TAG": "<ALT>",
+          "NWA-STK-NUM": "55-0579-8-0036",
+          "INSPECTION-TYPE": "INI",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "CHECK, 55, ENG OIL FILTER CHG;REDUCED INTERVAL;INI",
+          "REFERENCE-INFO": "REQUIRED WITHIN 100 HRS AFTER ENGINE CHANGE       ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": "L",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": "T",
+              "ALLOWABLE-TIME-TO-OVERHAUL": " 000100.00",
+              "ALLOWABLE-LIFE": " 000000.00"
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "</ALT>"
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        },
+        {
+          "START-TAG": "     ",
+          "NWA-STK-NUM": "              ",
+          "INSPECTION-TYPE": "   ",
+          "SUPPRESS-FORECAST": "          ",
+          "KEYWORD-DESCRIPTION": "                                                  ",
+          "REFERENCE-INFO": "                                                  ",
+          "TIME-DETAILS": [
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            },
+            {
+              "TIME-STANDARD": " ",
+              "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
+              "ALLOWABLE-LIFE": "          "
+            }
+          ],
+          "END-TAG": "      "
+        }
+      ]
     }
-  ],
-  "NWA-STOCK-NUM": "55-0579-8-0037",
-  "CONTROL-PROGRAM": "014",
-  "FILLER": " ",
-  "CONTROL-PROGRAM-DESC": "SPECIAL        ",
-  "RECORDS-REQUIRED-IND": "Y",
-  "MFG-PART-NUMBER": "0M328#514948        ",
-  "AA-STATUS-LABEL": "        ",
-  "AA-STATUS": "           ",
-  "AA-WORK-SECTION-LABEL": "                   ",
-  "AA-WORK-SECTION-NUMBER": "  ",
-  "AA-WORK-SECTION-TITLE": "                                                                ",
-  "AA-DESCRIPTION-LABEL": "                ",
-  "AA-DESCRIPTION": "                                                  ",
-  "ALTERNATE-DETAILS": [
-    {
-      "START-TAG": "<ALT>",
-      "NWA-STK-NUM": "55-0579-8-0037",
-      "INSPECTION-TYPE": "N/A",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "CHECK, 55, ENG OIL FILTER CHG;REDUCED INTERVAL;N/A",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": "L",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": "T",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "</ALT>"
-    },
-    {
-      "START-TAG": "<ALT>",
-      "NWA-STK-NUM": "58-0579-8-0036",
-      "INSPECTION-TYPE": "INI",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "CHECK, 58, CEP;OIL FILTER CHG;REDUCED INTERVAL;INI",
-      "REFERENCE-INFO": "REQUIRED WITHIN 100 HRS AFTER ENGINE CHANGE       ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": "L",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": "T",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000100.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "</ALT>"
-    },
-    {
-      "START-TAG": "<ALT>",
-      "NWA-STK-NUM": "58-0579-8-0037",
-      "INSPECTION-TYPE": "N/A",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "CHECK, 58, CEP;OIL FILTER CHG;REDUCED INTERVAL;N/A",
-      "REFERENCE-INFO": "OM328#514948                                      ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": "L",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": "T",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "</ALT>"
-    },
-    {
-      "START-TAG": "<ALT>",
-      "NWA-STK-NUM": "55-0579-8-0036",
-      "INSPECTION-TYPE": "INI",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "CHECK, 55, ENG OIL FILTER CHG;REDUCED INTERVAL;INI",
-      "REFERENCE-INFO": "REQUIRED WITHIN 100 HRS AFTER ENGINE CHANGE       ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": "L",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000000.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": "T",
-          "ALLOWABLE-TIME-TO-OVERHAUL": " 000100.00",
-          "ALLOWABLE-LIFE": " 000000.00"
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "</ALT>"
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    },
-    {
-      "START-TAG": "     ",
-      "NWA-STK-NUM": "              ",
-      "INSPECTION-TYPE": "   ",
-      "SUPPRESS-FORECAST": "          ",
-      "KEYWORD-DESCRIPTION": "                                                  ",
-      "REFERENCE-INFO": "                                                  ",
-      "TIME-DETAILS": [
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        },
-        {
-          "TIME-STANDARD": " ",
-          "ALLOWABLE-TIME-TO-OVERHAUL": "          ",
-          "ALLOWABLE-LIFE": "          "
-        }
-      ],
-      "END-TAG": "      "
-    }
-  ]
+  }
 }

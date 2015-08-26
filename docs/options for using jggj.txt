@@ -1,0 +1,69 @@
+What is jgggj?
+  - Utility for transforming request data in JSON to a fixed-width formatted string to send to Sceptre and transforming a fixed-width formatted string to data in a JSON response based on copybooks and other declarative specifications.
+
+Why JavaScript?
+  - I could spend hours going over the many benefits so for brevity, I will just note three of the best reasons:
+    1. JSON is very easy to work with in JavaScript, using near identical syntaxtic rules for object literals.
+    2. Development is much faster for reasons I could also spend hours going over.
+    3. JavaScript is a poster-child for a hybrid language. Functional programming allows this utility to be written in a more declarative way.
+
+How can jgggj be utilized?
+  1. As a web service running on Node
+    - While we could expose the service for client-side consumption, it may be best to restrict it to the Delta intranet. In other words, we could make it only accessible on the server boxes.
+    - With this option, is may also be ideal to cut out the Java & WebSphere dependency for managing MQ's.
+  2. As a client side library
+    - As a client-side library, we lose a lot of control that could be very important later. We sacrifice much of our ability to detect or diagnose errors, lose the ability to put any business logic (and validation) on the server except in Cobol, necessitate that all applications interact with the library instead of a web service, and potentially open a security hole.
+  3. As an executable on the Linux servers
+    - We could build in transformation steps, that simply execute the executable, into the existing method(s) that make the Sceptre requests with the MQ. It would execute once per Transaction transformation.
+  4. As a java class transpiled from javascript
+    - Don't know how possible this is.
+  5. In a javascript engine running in the JVM (such as Rhino)
+    - Don't know how possible/difficult this would be to implement.
+    - Don't know how this would effect response-time performance.
+
+What is the "transformation" module?
+  - The primary utility library for transforming data between JSON and fixed-width formatted strings.
+
+What is the "parser"?
+  - Utility for transforming structural details from a copybook, and possibly additional parameters, into a JSON-based structure, which I call a "template", that can be used by the "transformation" module to declaratively control its behavior.
+
+How can parser.js be utilized?
+  - By passing in the path of a copybook. Example: "node parser <file-name>".
+  - By piping in the copybook data. Example: "cat <file-name> | node parser". (NYI)
+  - By default, the "template" is printed to the terminal. If an output file is specified with the -o option, the "template" is instead saved to the output file. (NYI)
+
+How is a "template" stored and retrieved?
+  - The "parser" can create a "template" as either a JSON or JS file.
+  - "Templates" can be loaded from the file system in three ways presently.
+    1. Dynamically loading all .json files from the "templates directory".
+    2. Dynamically loading all .js files from the "templates directory".
+    3. Hardcoded loading of known .js/.json files from anywhere.
+
+How is the "transformation" designed to be used?
+  - The following modules implement and expose the transformation logic at different levels of abstraction, ordered from lowest to highest:
+    1. templates.js and sceptre.js
+    2. sceptre-caller.js
+    3. sceptre-stream.js
+    4. tran.js, executable.js, client.js, or inputs.js (Note that these can depend directly on any of the previous levels)
+  - How can tran.js be utilized?
+    - tran.js responds to http requests to /tran/:tran-name.
+    - It presently accepts data passed as a query-string, x-www-form-urlencoded, or application/json.
+    - The :tran-name is optional but if omitted, the request data should contain a key for 'transaction-code' or 'TRANSACTION-CODE'. (NYI)
+  - How can executable.js be utilized?
+    - executable.js may be called in two ways:
+      - By passing in the file-name of a file containing input data in JSON. Example: "node executable <file-name>". On unix, the 'node' is optional.
+      - By passing in the input data in JSON. Example: "node executable <input-data-in-quotes>". On unix, the 'node' is optional. (NYI)
+      - By piping input data in JSON into it. Example: "type <file-name> | node executable". On unix, this can be "cat <file-name> | executable".
+    - executable.js also has two modes:
+      - As a transformer and requester:
+    	- This will take data in JSON, convert it, pass it to sceptre, convert the response, and return the response in JSON.
+      - As just a transformer (NYI)
+        - A single execution will either convert from data in JSON to a fixed-width formatted string or the reverse.
+        - The direction of the transformation is automatically determined by the the format of the data being passed in.
+  - How can client.js be utilized?
+    - client.js has the same functionality of executable.js but is packaged to work entirely on the client-side as a javascript library.
+    - Testing has proven that this option is simple to implement but it has not been heavily developed since its use may yield an undesirable archetecture.
+  - How can inputs.js be utilized?
+    - In conjunction with trans.js or client.js.
+    - input.js responds to http requests to /inputs/:tran-name
+    - If :tran-name is not provided, an array of tran-names is returned. Otherwise, a list of fields required for :tran-name is returned.

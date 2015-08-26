@@ -1,0 +1,14 @@
+A few options (more exist!):
+  *1. Rewrite in Java.
+    - Certainly possible but much less succinct, harder to read, and more difficult to implement or extend.
+  2. (Further) Prove the usefulness of having Node on the server.
+    - Integrate MQ's into Node
+      - Run performance benchmarks to roughly determine possible performance benefits.
+    - *Talk directly to Sceptre in Node (this would be a game changer)
+    - *Build part of an actual "REST" layer and consume it with D3.
+      Use this as an example for the two layer (trans/rest) approach.
+  3. Look into javascript -> Java transpilers
+  4. Run jggj in a JS environment that runs in the JVM such as Rhino.
+  5. Move transformation logic to client side library. There would entail a fairly significant archtecture change to a design that is considered an anti-pattern.
+  6. Expose jggj as a server-side executable program that can be called from Java.
+  7. Sceptre Bot!
