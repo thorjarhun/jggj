@@ -1,0 +1,136 @@
+000100 01  MII101IO.                                                    00000100
+000200   03  LINE-LENGTH-01            PIC 9(04)              COMP.     00000200
+000300   03  ZZ01                      PIC X(02).                       00000300
+000400   03  TRANSACTION-CODE          PIC X(08).                       00000400
+000500   03  INPUT-DATA.                                                00000500
+000600     05  FUNCTION-CDE            PIC X(01).                       00000600
+000700         88 IRA                              VALUE '1'.           00000700
+000800         88 ICS                              VALUE '2'.           00000800
+000810         88 PCW-CREATE-DASH8                 VALUE '3'.           00000810
+000900     05  OPTION-CDE              PIC X(01).                       00000900
+001000         88 SEARCHING                        VALUE '1'.           00001000
+001100         88 CALCULATE                        VALUE '2'.           00001100
+001200         88 RECALC                           VALUE '3'.           00001200
+001300         88 UPDATE                           VALUE '4'.           00001300
+001400         88 REBUILD-AFTER-UPDATE             VALUE '5'.           00001400
+001410         88 GET-IES-DATA-ONLY                VALUE '6'.           00001410
+001500     05  GACS-STK-NUM            PIC X(14).                       00001500
+001600     05  GACS-SER-NUM            PIC X(05).                       00001600
+001700     05  EMPLOYEE-NUM            PIC X(10).                       00001700
+001800     05  IUC-COMMENT             PIC X(64).                       00001800
+001900     05  GACS-INSTALL-DATE       PIC X(10).                       00001900
+002000     05  TSO-GROUP               OCCURS 0004.                     00002000
+002100       07  TIME-STANDARD-DESC    PIC X(16).                       00002100
+002200           88 NO-TIME-STANDARD               VALUE ' '.           00002200
+002300       07  TSO                   PIC X(10).                       00002300
+002400       07  TIME-SINCE-OHAUL-AT-INST                               00002400
+002500                                 PIC X(10).                       00002500
+002600       07  TIME-SINCE-REP-AT-INST                                 00002600
+002700                                 PIC X(10).                       00002700
+002800       07  TSO-AT-REMOVAL        PIC X(10).                       00002800
+002900       07  TOTAL-TIME            PIC X(10).                       00002900
+003000       07  N-H-A-TSO-AT-INSTALLATION                              00003000
+003100                                 PIC X(10).                       00003100
+003200   03  OUTPUT-DATA.                                               00003200
+003300     05  ARF-STOCK-NUM           PIC X(14).                       00003300
+003400     05  ARF-SERIAL-NUM          PIC X(05).                       00003400
+003500     05  EXTERNAL-MESSAGE-TABLE.                                  00003500
+003600       07  EXTERNAL-MESSAGE      OCCURS 0003.                     00003600
+003700         09  MESSAGE-IDENTIFICATION                               00003700
+003800                                 PIC X(08).                       00003800
+003900         09  MESSAGE-TEXT        PIC X(54).                       00003900
+004000     05  ICS-ORIG-FINAL-DATA.                                     00004000
+004100       07  ICS-START-TAG         PIC X(05)   VALUE '<ICS>'.       00004100
+004200       07  NCA-PART-NUM          PIC X(14).                       00004200
+004300       07  NCA-SERIAL-NUM        PIC X(05).                       00004300
+004400       07  KEYWORD               PIC X(15).                       00004400
+004500       07  DESCRIPTION           PIC X(35).                       00004500
+004600       07  CALCULATED-DATE.                                       00004600
+004700         09  CALCULATED-DAY      PIC X(02).                       00004700
+004800         09  CALCULATED-MONTH    PIC X(03).                       00004800
+004900         09  CALCULATED-YEAR     PIC X(02).                       00004900
+005000       07  INSTALLED-DATE.                                        00005000
+005100         09  INSTALLED-DAY       PIC X(02).                       00005100
+005200         09  INSTALLED-MONTH     PIC X(03).                       00005200
+005300         09  INSTALLED-YEAR      PIC X(02).                       00005300
+005400       07  TSO-GROUP             OCCURS 0004.                     00005400
+005500         09  TIME-STANDARD-DESC  PIC X(16).                       00005500
+005600             88 NO-TIME-STANDARD             VALUE ' '.           00005600
+005700         09  TIME-ERROR-IND      PIC X(1).                        00005700
+005800             88 NO-ERROR                     VALUE ' '.           00005800
+005900             88 ERROR-FOUND                  VALUE 'Y'.           00005900
+006000         09  TSO                 PIC X(10).                       00006000
+006100         09  TIME-SINCE-OHAUL-AT-INST                             00006100
+006200                                 PIC X(10).                       00006200
+006300         09  TIME-SINCE-REP-AT-INST                               00006300
+006400                                 PIC X(10).                       00006400
+006500         09  TSO-AT-REMOVAL      PIC X(10).                       00006500
+006600         09  TOTAL-TIME          PIC X(10).                       00006600
+006700         09  N-H-A-TSO-AT-INSTALLATION                            00006700
+006800                                 PIC X(10).                       00006800
+006900       07  ICS-END-TAG           PIC X(06)   VALUE '</ICS>'.      00006900
+007000     05  IES-FINAL-DATA.                                          00007000
+007100       07  IES-START-TAG         PIC X(05)   VALUE '<IES>'.       00007100
+007200       07  NCA-PART-NUMBER       PIC X(14).                       00007200
+007300       07  NCA-SERIAL-NUMBER     PIC X(05).                       00007300
+007400       07  PART-DATA.                                             00007400
+007500         09  FTN-NUMBER          PIC X(06).                       00007500
+007600         09  MFG-PART-NUMBER     PIC X(20).                       00007600
+007700         09  MFG-SERIAL-NUMBER   PIC X(15).                       00007700
+007800         09  KEYWORD-DESCRIPTION PIC X(50).                       00007800
+               09  SECONDARY-SERIAL-NUMBER 
+                                   PIC X(10).
+007900         09  OWNER-CODE          PIC X(05).                       00007900
+008000         09  PRIME-SHOP          PIC X(03).                       00008000
+008100         09  SERVICEABILITY-DESC PIC X(13).                       00008100
+008200         09  POSITION-CODE       PIC X(03).                       00008200
+008300         09  DESCRIPTION-CODE    PIC X(10).                       00008300
+008400         09  ON-OFF-LIT          PIC X(03).                       00008400
+008500         09  AIRCRAFT-NUMBER     PIC X(05).                       00008500
+008600         09  AC-POSITION-CODE    PIC X(03).                       00008600
+008700         09  TRACKING-LOCATION   PIC X(42).                       00008700
+008800         09  PREVIOUS-LOCATION   PIC X(42).                       00008800
+008900         09  TYPE-MAINTENANCE    PIC X(12).                       00008900
+009000         09  MAINTENANCE-DATE.                                    00009000
+009100           11  DAYS              PIC X(02).                       00009100
+009200           11  MONTH             PIC X(03).                       00009200
+009300           11  YEAR              PIC X(02).                       00009300
+009400         09  WORK-CONTROL-LIT    PIC X(31).                       00009400
+009500       07  NHA-DATA.                                              00009500
+009600         09  ON-OFF-LIT          PIC X(03).                       00009600
+009700         09  NHA-PART-NUMBER     PIC X(14).                       00009700
+009800         09  NHA-SERIAL-NUMBER   PIC X(05).                       00009800
+009900         09  NHA-MFG-SER-NUM     PIC X(15).                       00009900
+010000         09  NHA-KEYWORD         PIC X(15).                       00010000
+010100         09  INST-NHA-DATE.                                       00010100
+010200           11  DAYS              PIC X(02).                       00010200
+010300           11  MONTH             PIC X(03).                       00010300
+010400           11  YEAR              PIC X(02).                       00010400
+010500         09  ON-OFF-AC-DATE.                                      00010500
+010600           11  DAYS              PIC X(02).                       00010600
+010700           11  MONTH             PIC X(03).                       00010700
+010800           11  YEAR              PIC X(02).                       00010800
+010900       07  TIME-GROUP            OCCURS 0004.                     00010900
+011000         09  TIME-STANDARD-DESC  PIC X(24).                       00011000
+011100         09  TSO.                                                 00011100
+011200           11  SIGN-OF-THE-TIME  PIC X(01).                       00011200
+011300           11  VALUE-OF-TIME     PIC X(09).                       00011300
+011400         09  TOTAL-TIME.                                          00011400
+011500           11  SIGN-OF-THE-TIME  PIC X(01).                       00011500
+011600           11  VALUE-OF-TIME     PIC X(09).                       00011600
+011700         09  TIME-SINCE-REPAIR.                                   00011700
+011800           11  SIGN-OF-THE-TIME  PIC X(01).                       00011800
+011900           11  VALUE-OF-TIME     PIC X(09).                       00011900
+012000         09  TIME-SINCE-OHAUL-AT-INST.                            00012000
+012100           11  SIGN-OF-THE-TIME  PIC X(01).                       00012100
+012200           11  VALUE-OF-TIME     PIC X(09).                       00012200
+012300         09  ALLOWABLE-TTO       PIC X(09).                       00012300
+012400         09  ALLOWABLE-TIME-TO-OHAUL-SRC                          00012400
+012500                                 PIC X(01).                       00012500
+012600         09  ALLOWABLE-LIFE      PIC X(10).                       00012600
+012700         09  ALLOWABLE-LIFE-SRC  PIC X(01).                       00012700
+012800         09  TIME-REMAINING.                                      00012800
+012900           11  SIGN-OF-THE-TIME  PIC X(01).                       00012900
+013000           11  VALUE-OF-TIME     PIC X(09).                       00013000
+013100       07  IES-END-TAG           PIC X(06)   VALUE '</IES>'.      00013100
+          03  FILLER                   PIC X(50)

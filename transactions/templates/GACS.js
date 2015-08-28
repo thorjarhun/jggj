@@ -348,6 +348,12 @@ module.exports = {
                 },
                 {
                   "level": "09",
+                  "name": "SECONDARY-SERIAL-NUMBER",
+                  "type": "X",
+                  "size": 10
+                },
+                {
+                  "level": "09",
                   "name": "OWNER-CODE",
                   "type": "X",
                   "size": 5
@@ -676,8 +682,13 @@ module.exports = {
         }
       ],
       "size": 1
+    },
+    {
+      "level": "03",
+      "name": "FILLER",
+      "type": "X",
+      "size": 50
     }
   ],
-  "size": 1,
-  "returns input?": true
+  "size": 1
 }

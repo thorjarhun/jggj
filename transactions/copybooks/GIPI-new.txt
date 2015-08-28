@@ -1,0 +1,61 @@
+000100 01  MII103IO.                                                    00000100
+000200   03  LINE-LENGTH-01            PIC 9(04)              COMP.     00000200
+000300   03  ZZ01                      PIC X(02).                       00000300
+000400   03  TRANSACTION-CODE          PIC X(08).                       00000400
+000500   03  INPUT-DATA.                                                00000500
+000600     05  FUNCTION-CDE            PIC X(01).                       00000600
+000700         88 GET-GEN-DATA                     VALUE '1'.           00000700
+001000     05  INSP-NWA-STK-NUM        PIC X(14).                       00001000
+001100   03  EXTERNAL-MESSAGE-TABLE.                                    00001100
+001200       05  EXTERNAL-MESSAGE      OCCURS 0002.                     00001200
+001300         07  MESSAGE-IDENTIFICATION                               00001300
+001400                                 PIC X(08).                       00001400
+001500         07  MESSAGE-TEXT        PIC X(54).                       00001500
+003400   03  OUTPUT-DATA.                                               00003400
+003500                                                                  00003500
+003600     05  NWA-STOCK-NUM           PIC X(14).                       00003600
+003700     05  CONTROL-PROGRAM         PIC 9(03).                       00003700
+003800     05  FILLER                  PIC X(01).                       00003800
+003900     05  CONTROL-PROGRAM-DESC    PIC X(15).                       00003900
+004000     05  RECORDS-REQUIRED-IND    PIC X(01).                       00004000
+004100         88 NIS-ALERT-REQUIRED               VALUE 'A'.           00004100
+004200         88 IS-REQUIRED                      VALUE 'Y'.           00004200
+004300         88 NOT-REQUIRED                     VALUE ' '.           00004300
+004400     05  MFG-PART-NUMBER         PIC X(20).                       00004400
+004500     05  AA-STATUS-LABEL         PIC X(08)   VALUE 'STATUS: '.    00004500
+004700     05  AA-STATUS               PIC X(11).                       00004700
+004800     05  AA-WORK-SECTION-LABEL   PIC X(19)                        00004800
+004900                                 VALUE 'WORK SECTION/DESC: '.     00004900
+005000     05  AA-WORK-SECTION-NUMBER  PIC 9(02).                       00005000
+005100     05  FILLER                  PIC X(01).                       00005100
+005200     05  AA-WORK-SECTION-TITLE   PIC X(64).                       00005200
+005300     05  AA-DESCRIPTION-LABEL    PIC X(16)                        00005300
+005400                                 VALUE 'AA DESCRIPTION: '.        00005400
+005500     05  AA-DESCRIPTION          PIC X(50).                       00005500
+           05  EA-DETAIL-LABEL        PIC X(09) VALUE ‘EA LIST: ‘. 
+           05  EA-NUMBER               PIC X(12).
+005600     05  ALTERNATE-DETAILS   OCCURS 25 TIMES.                     00005600
+005700         07  START-TAG       PIC X(05)   VALUE '<ALT>'.           00005700
+005800         07  NWA-STK-NUM     PIC X(14).                           00005800
+005900         07  INSPECTION-TYPE PIC X(03).                           00005900
+006000             88 COMPLIED-WITH            VALUE 'C/W'.             00006000
+006100             88 REPETITIVE               VALUE 'REP'.             00006100
+006200             88 NOT-APPLICABL            VALUE 'N/A'.             00006200
+006300             88 INITIAL-INSPECTION       VALUE 'INI'.             00006300
+006400             88 TERMINATING-ACTION       VALUE 'TER'.             00006400
+006500         07  SUPPRESS-FORECAST                                    00006500
+006510                             PIC X(10).                           00006510
+006600         07  KEYWORD-DESCRIPTION                                  00006600
+006610                             PIC X(50).                           00006610
+006700         07  REFERENCE-INFO  PIC X(50).                           00006700
+               07  AA-FRCST-ACCRUALS
+                                   PIC X(50).
+006800         07  TIME-DETAILS    OCCURS 4 TIMES.                      00006800
+006900             09  TIME-STANDARD                                    00006900
+006910                             PIC X(01).                           00006910
+007000             09  ALLOWABLE-TIME-TO-OVERHAUL                       00007000
+007100                             PIC X(10).                           00007100
+007200             09  ALLOWABLE-LIFE                                   00007200
+007210                             PIC X(10).                           00007210
+007300         07  END-TAG         PIC X(06)   VALUE '</ALT>'.          00007300
+          03  FILLER               PIC X(50).

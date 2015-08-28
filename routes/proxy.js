@@ -21,7 +21,7 @@ router.all('/', function(req, res) {
   var options = {
     hostname: 'localhost',
     port: 9080,
-    path: '/PCW/rest/api/proxy',
+    path: '/PCW/service/proxy',
     method: 'POST',
     headers: _.extend(_.omit(req.headers, 'content-length'), { 'Content-Type' : 'application/json; charset=utf-8' })
   };

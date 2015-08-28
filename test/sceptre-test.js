@@ -1,4 +1,4 @@
-//process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'test';
 var fs = require('fs');
 var assert = require("assert");
 var request = require('request');

@@ -143,6 +143,18 @@ module.exports = {
         },
         {
           "level": "05",
+          "name": "EA-DETAIL-LABEL",
+          "type": "X",
+          "size": 9
+        },
+        {
+          "level": "05",
+          "name": "EA-NUMBER",
+          "type": "X",
+          "size": 12
+        },
+        {
+          "level": "05",
           "name": "ALTERNATE-DETAILS",
           "size": 25,
           "children": [
@@ -184,6 +196,12 @@ module.exports = {
             },
             {
               "level": "07",
+              "name": "AA-FRCST-ACCRUALS",
+              "type": "X",
+              "size": 50
+            },
+            {
+              "level": "07",
               "name": "TIME-DETAILS",
               "size": 4,
               "children": [
@@ -217,8 +235,13 @@ module.exports = {
         }
       ],
       "size": 1
+    },
+    {
+      "level": "03",
+      "name": "FILLER",
+      "type": "X",
+      "size": 50
     }
   ],
-  "size": 1,
-  "returns input?": true
+  "size": 1
 }
